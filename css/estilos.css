@@ -1,0 +1,46 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Estilos para el body */
+body {
+    margin: 0;  
+    padding: 0; 
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Estilo para el Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    padding: 0;  
+    background-color: #1e1e1e;
+    color: rgb(106, 255, 113);
+}
+
+/* Estilo para el logo */
+header .logo a {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-img {
+    height: 2.5rem;
+    width: auto;
+}
+
+header .menu a{
+    display: flex;
+}
