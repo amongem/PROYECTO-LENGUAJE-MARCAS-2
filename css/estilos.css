@@ -79,6 +79,11 @@ button:hover {
     padding: 2rem;
 }
 
+.main__section {
+    margin-bottom: 3rem; /* Ajusta el valor según el espacio que desees */
+}
+
+
 .main__title {
     color: var(--color-highlight);
     font-size: 1.8rem;
@@ -124,6 +129,98 @@ button:hover {
     color: var(--color-text);
     font-size: 1rem;
     font-weight: bold;
+}
+
+.audio-players {
+    padding: 3rem 2rem; 
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+}
+
+.audio-players__title {
+    text-align: center;
+    color: var(--color-highlight);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.audio-players__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.audio-players__item {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-highlight);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 1rem; /* Espaciado interno para los elementos */
+}
+
+.audio-players__item:hover {
+    transform: scale(1.05);
+}
+
+.audio-players__figure {
+    margin: 0;
+}
+
+.audio-players__img {
+    width: 100%;
+    height: auto;
+}
+
+.audio-players__name {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin: 0.5rem 0;
+}
+
+.audio-players__description {
+    font-size: 1rem;
+    color: var(--color-text);
+    padding: 0 1rem 1rem;
+}
+
+
+/* Opiniones con Avatares */
+.opiniones__item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.opiniones__texto {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.opiniones__autor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.opiniones__avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-highlight);
+}
+
+.opiniones__nombre {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--color-highlight);
 }
 
 /* Footer */
