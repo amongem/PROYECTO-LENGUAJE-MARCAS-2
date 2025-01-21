@@ -223,17 +223,405 @@ button:hover {
     color: var(--color-highlight);
 }
 
-/* Footer */
-.footer {
+/* Separación general entre secciones */
+.main__section {
+    margin: 4rem 0; /* Mayor separación vertical */
+    padding: 2.5rem; /* Ajuste de padding para mayor espacio interno */
+}
+
+/* Historia: Rejilla */
+.main__about {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    align-items: center; 
+    margin: 0 auto; 
+    max-width: 800px; 
+    padding: 2rem 0; 
+    text-align: center; 
+}
+
+
+.main__image {
+    max-width: 75%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar imágenes */
+}
+
+/* Valores: Lista en columnas */
+.main__values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Separación más pronunciada entre elementos */
+    margin: 2rem 0;
+    list-style: disc;
+    padding-left: 2.5rem;
+}
+
+.main__values-list li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Equipo: Rejilla dinámica */
+.main__team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* Mantén columnas adaptables */
+    gap: 2rem; /* Espacio entre elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Asegura alineación vertical */
+    padding: 0;
+    list-style: none;
+    margin: 0 auto; /* Centra el contenedor dentro de la página */
+}
+
+
+.main__team-img {
+    width: 75%;
+    height: auto;
+    border-radius: 50%;
+    object-fit:fill
+    
+}
+
+.main__team-name {
+    font-weight: bold;
     text-align: center;
-    padding: 1rem;
-    background-color: var(--color-secondary);
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+}
+
+.main__team-role {
+    text-align: center;
+    font-size: 1rem;
     color: var(--color-text);
 }
 
-/* Responsive */
+/* Línea del Tiempo */
+.main__timeline {
+    margin: 4rem 0;
+    padding: 2.5rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main__timeline-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-left: 2.5rem; /* Ajuste del margen izquierdo */
+}
+
+.main__timeline-list::before {
+    content: "";
+    position: absolute;
+    left: 1.2rem;
+    top: 0;
+    bottom: 0;
+    width: 0.2rem;
+    background-color: var(--color-highlight);
+}
+
+.main__timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+.main__timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 0.2rem;
+    top: 0.7rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--color-highlight);
+    border-radius: 50%;
+    border: 0.2rem solid var(--color-background);
+}
+
+.main__timeline-item time {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--color-text);
+    display: block;
+    margin-bottom: 0.7rem;
+}
+
+.main__timeline-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+/* Ajustes Responsive */
 @media (max-width: 768px) {
-    .main__list {
-        flex-direction: column;
+    .main__about {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
     }
+
+    .main__timeline-item {
+        margin-bottom: 2rem;
+    }
+
+    .main__timeline-item time {
+        font-size: 1.1rem;
+    }
+
+    .main__timeline-item p {
+        font-size: 1rem;
+    }
+}
+
+/* Ubicación */
+.main__location {
+    margin: 4rem 0;
+    padding: 2.5rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efecto para destacar la sección */
+}
+
+.main__text {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    max-width: 50rem; /* Limitar ancho del texto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main__map {
+    width: 100%;
+    max-width: 100%;
+    height: 22rem; /* Aumentar la altura del mapa */
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+/* Carrito de Compras */
+
+.cart__list {
+    list-style: none;
+    padding: 0;
+}
+
+.cart__item {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.cart__item-img {
+    width: 10rem;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.cart__item-title {
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+
+.cart__item-price {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.cart__item-quantity {
+    width: 5rem;
+    padding: 0.5rem;
+    margin-right: 2rem;
+}
+
+.cart__item-remove {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.cart__item-remove:hover {
+    background-color: #c0392b;
+}
+
+.cart__total {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.cart__checkout-btn {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.cart__checkout-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Sección de cupones */
+.cart__coupons {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.cart__coupons-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.cart__coupons-info {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.cart__coupons-form {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart__coupons-input {
+    width: 70%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cart__coupons-button {
+    width: 25%;
+    padding: 0.8rem;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart__coupons-button:hover {
+    background-color: #2980b9;
+}
+
+.cart__coupons-message {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #27ae60;
+}
+
+/* Estilos generales del formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form__label {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form__input {
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form__input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-form__button {
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.contact-form__button:hover {
+    background-color: #0056b3;
+}
+
+/* Información adicional de contacto */
+.main__section--contact-info {
+    margin-top: 3rem;
+}
+
+.contact-info__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.contact-info__list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-info__item {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-info__value {
+    font-weight: bold;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contact-form__label {
+        font-size: 1.2rem;
+    }
+
+    .contact-form__input {
+        font-size: 1.4rem;
+    }
+
+    .contact-form__button {
+        font-size: 1.4rem;
+    }
+}
+
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
 }

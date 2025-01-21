@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto con Vinilo Retro. Pregúntanos lo que necesites.">
+    <title>Contacto - Vinilo Retro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="header__logo">
+            <a href="index.html" class="header__logo-link">
+                <img src="assets/logovinilo.png" alt="Vinilo Retro Logo" class="header__logo-img">RETROVINYL
+            </a>
+        </h1>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Inicio</a></li>
+                <li class="header__nav-item"><a href="carrito.html" class="header__nav-link">Carrito</a></li>
+                <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+                <li class="header__nav-item"><a href="sobrenosotros.html" class="header__nav-link">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Contenido Principal -->
+    <main class="main">
+        <section class="main__section">
+            <h2 class="main__title">Contáctanos</h2>
+        </section>
+
+        <section class="main__section">
+            <form action="#" method="post" class="contact-form">
+                <label for="nombre" class="contact-form__label">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" class="contact-form__input" required>
+
+                <label for="email" class="contact-form__label">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="contact-form__input" required>
+
+                <label for="telefono" class="contact-form__label">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" class="contact-form__input">
+
+                <label for="asunto" class="contact-form__label">Asunto:</label>
+                <select id="asunto" name="asunto" class="contact-form__input">
+                    <option value="consulta">Consulta General</option>
+                    <option value="soporte">Soporte Técnico</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="preferencia" class="contact-form__label">Preferencia de Contacto:</label>
+                <select id="preferencia" name="preferencia" class="contact-form__input">
+                    <option value="email">Correo Electrónico</option>
+                    <option value="telefono">Teléfono</option>
+                </select>
+
+                <label for="fecha-contacto" class="contact-form__label">Fecha Preferida para Contacto:</label>
+                <input type="date" id="fecha-contacto" name="fecha-contacto" class="contact-form__input">
+
+                <label for="mensaje" class="contact-form__label">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" class="contact-form__input" rows="4" required></textarea>
+
+                <button type="submit" class="contact-form__button">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <section class="main__section main__section--contact-info">
+            <h3 class="contact-info__title">Otra Forma de Contacto</h3>
+            <ul class="contact-info__list">
+                <li class="contact-info__item">Teléfono: <span class="contact-info__value">+34 912 345 678</span></li>
+                <li class="contact-info__item">Email: <span class="contact-info__value">info@retrovinyl.com</span></li>
+                <li class="contact-info__item">Redes Sociales: <span class="contact-info__value">Facebook, Twitter, Instagram</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 RetroVinyl - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

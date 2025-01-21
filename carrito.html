@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vinilo Retro - La mejor colección de discos de vinilo en línea. Encuentra tu álbum favorito.">
+    <title>Vinilo Retro - Carrito</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="header__logo">
+            <a href="index.html" class="header__logo-link">
+                <img src="assets/logovinilo.png" alt="Vinilo Retro Logo" class="header__logo-img">RETROVINYL
+            </a>
+        </h1>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="sobrenosotros.html" class="header__nav-link">Sobre Nosotros</a></li>
+                <li class="header__nav-item"><a href="carrito.html" class="header__nav-link">Carrito</a></li>
+                <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main">
+        <section class="main__section">
+            <h2 class="main__title">Carrito de Compras</h2>
+            <ul class="cart__list">
+                <li class="cart__item">
+                    <img src="assets/carrito1.jpg" alt="Vinilo 1" class="cart__item-img">
+                    <p class="cart__item-title">Ours Is Chrome - Superheaven</p>
+                    <p class="cart__item-price">€20.00</p>
+                    <input type="number" value="1" min="1" class="cart__item-quantity">
+                    <button class="cart__item-remove">Eliminar</button>
+                </li>
+                <li class="cart__item">
+                    <img src="assets/carrito2.jpg" alt="Vinilo 2" class="cart__item-img">
+                    <p class="cart__item-title">Monster - Future</p>
+                    <p class="cart__item-price">€22.50</p>
+                    <input type="number" value="1" min="1" class="cart__item-quantity">
+                    <button class="cart__item-remove">Eliminar</button>
+                </li>
+                <li class="cart__item">
+                    <img src="assets/carrito3.jpg" alt="Vinilo 3" class="cart__item-img">
+                    <p class="cart__item-title">Pieces of Man - Gil Scott-Heron</p>
+                    <p class="cart__item-price">€18.00</p>
+                    <input type="number" value="1" min="1" class="cart__item-quantity">
+                    <button class="cart__item-remove">Eliminar</button>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="main__section">
+            <h2 class="main__title">Resumen del Pedido</h2>
+            <p class="cart__total">Total: €60.50</p>
+            <button class="cart__checkout-btn">Proceder al Pago</button>
+        </section>
+
+        <section class="cart__coupons">
+            <h3 class="cart__coupons-title">Aplicar Cupón de Descuento</h3>
+            <p class="cart__coupons-info">Introduce tu código de cupón para obtener un descuento en tu compra.</p>
+            <form class="cart__coupons-form">
+                <input type="text" class="cart__coupons-input" placeholder="Introduce tu código">
+                <button type="submit" class="cart__coupons-button">Aplicar</button>
+            </form>
+            <p class="cart__coupons-message">¡Descuento del 10% aplicado con el código VINILO10!</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 RetroVinyl - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
