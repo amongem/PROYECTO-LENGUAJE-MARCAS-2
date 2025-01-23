@@ -6,6 +6,38 @@
     --color-secondary: #E0E0E0;
 }
 
+/* Tema Oscuro (No funcional aún) */
+:root.dark-mode {
+    --color-background: #222222;
+    --color-text: #F9F9F9;
+    --color-highlight: #FFD700; 
+    --color-secondary: #333333;
+}
+
+.theme-toggle {
+    background: var(--color-highlight);
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: not-allowed; /* Indica que no es funcional por ahora */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    background: var(--color-highlight);
+}
+
+.theme-toggle__icon {
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -37,7 +69,7 @@ button:hover {
 }
 
 /* Header */
-.header {
+header {
     background-color: var(--color-secondary);
     color: var(--color-text);
     padding: 1rem 2rem;
@@ -618,10 +650,54 @@ button:hover {
 }
 
 
+
+/* Footer */
 .footer {
     background-color: #222;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     margin-top: 4rem;
+    font-size: 1rem;
+}
+
+.footer__info {
+    margin-bottom: 1rem;
+}
+
+.footer__links,
+.footer__social {
+    margin-bottom: 1rem;
+}
+
+.footer__list,
+.footer__social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer__item,
+.footer__social-item {
+    margin: 0;
+}
+
+.footer__link,
+.footer__social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover,
+.footer__social-link:hover {
+    color: #aaa;
+}
+
+.footer__social p {
+    margin-bottom: 0.5rem;
 }

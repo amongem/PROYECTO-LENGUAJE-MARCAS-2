@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Vinilo Retro - Inicio</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -22,6 +24,9 @@
                 <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
             </ul>
         </nav>
+        <button class="theme-toggle" aria-label="cambiar tema">
+            <span class="theme-toggle__icon">🌖</span>
+        </button>
     </header>
 
     <!-- Contenido Principal -->
@@ -51,7 +56,7 @@
                 </li>
             </ul>
         </section>
-      
+
         <section class="main__section">
             <h2 class="main__title">Selección Artistas</h2>
             <ul class="main__list">
@@ -89,7 +94,7 @@
                             <p class="audio-players__description">Reproductor automático con tracción por correa y diseño compacto. Ideal para iniciarte en el mundo del vinilo.</p>
                         </figcaption>
                     </figure>
-               
+                </li>
                 <li class="audio-players__item">
                     <figure class="audio-players__figure">
                         <img src="assets/reproductor3.png" alt="Pro-Ject Debut Carbon Evo" class="audio-players__img">
@@ -110,12 +115,12 @@
                 </li>
             </ul>
         </section>
-        
 
         <section class="main__section main__section--opiniones">
             <h2 class="main__title">Opiniones de Nuestros Clientes</h2>
             <div class="opiniones">
                 <article class="opiniones__item">
+                    <h3>Opinión de Alex Rodríguez</h3>
                     <p class="opiniones__texto">"¡Increíble colección de vinilos! Encontré justo lo que estaba buscando."</p>
                     <div class="opiniones__autor">
                         <img src="assets/avatar1.png" alt="Avatar de Alex Rodríguez" class="opiniones__avatar">
@@ -123,6 +128,7 @@
                     </div>
                 </article>
                 <article class="opiniones__item">
+                    <h3>Opinión de María López</h3>
                     <p class="opiniones__texto">"El envío fue rápido y los vinilos llegaron en perfecto estado. Muy recomendado."</p>
                     <div class="opiniones__autor">
                         <img src="assets/avatar2.jpg" alt="Avatar de María López" class="opiniones__avatar">
@@ -130,6 +136,7 @@
                     </div>
                 </article>
                 <article class="opiniones__item">
+                    <h3>Opinión de Javier García</h3>
                     <p class="opiniones__texto">"Gran calidad y precios competitivos. Definitivamente volveré a comprar aquí."</p>
                     <div class="opiniones__autor">
                         <img src="assets/avatar3.jpg" alt="Avatar de Javier García" class="opiniones__avatar">
@@ -138,12 +145,33 @@
                 </article>
             </div>
         </section>
-        
+
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 RetroVinyl - Todos los derechos reservados.</p>
+        <section class="footer__info">
+            <h2>Información</h2>
+            <p>&copy; 2025 RetroVinyl - Todos los derechos reservados.</p>
+        </section>
+        <section class="footer__links">
+            <h2>Enlaces</h2>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="privacidad.html" class="footer__link">Política de Privacidad</a></li>
+                <li class="footer__item"><a href="terminos.html" class="footer__link">Términos y Condiciones</a></li>
+                <li class="footer__item"><a href="cookies.html" class="footer__link">Política de Cookies</a></li>
+            </ul>
+        </section>
+        <section class="footer__social">
+            <h2>Síguenos en:</h2>
+            <ul class="footer__social-list">
+                <li class="footer__social-item"><a href="#" class="footer__social-link">Facebook</a></li>
+                <li class="footer__social-item"><a href="#" class="footer__social-link">Instagram</a></li>
+                <li class="footer__social-item"><a href="#" class="footer__social-link">Twitter</a></li>
+            </ul>
+        </section>
     </footer>
+
 </body>
+
 </html>
