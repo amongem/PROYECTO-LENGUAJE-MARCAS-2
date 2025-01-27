@@ -37,7 +37,7 @@ Cada página utiliza etiquetas semánticas de HTML5 y está diseñada con la met
 - **`<a>`**: Crea enlaces (atributos `href` y `target`).
 - **`<article>`**: Define contenido independiente o relacionado.
 
-´´´
+```html
    <!-- Contenido Principal -->
     <main class="main">
         <section class="main__section">
@@ -89,6 +89,7 @@ Cada página utiliza etiquetas semánticas de HTML5 y está diseñada con la met
             </ul>
         </section>
     </footer>
+```
 
 _Ejemplo de código mostrando el uso de las etiquetas_
 
@@ -256,4 +257,8 @@ Aquí puede verse como quedaría implementado:
 
 #### Conclusiones
 
-Hasta aquí 
+Hasta aquí la documentación de mi Proyecto Web para Lenguaje de Marcas. Ha estado entretenido y tedioso por partes iguales y ha llegado a cuestionarme mi cordura por momentos, pero a lo que le he pillado el truco, resultó ser satisfactorio. Siento curiosidad por terminar de darle forma una vez veamos Javascript. 
+
+Gracias por tu tiempo! :D
+
+![Saludos](assets/gatopc.jpg)
