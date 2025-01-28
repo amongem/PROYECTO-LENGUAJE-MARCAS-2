@@ -133,7 +133,7 @@ header {
 }
 
 .main__section {
-    margin-bottom: 3rem; /* Ajusta el valor según el espacio que desees */
+    margin-bottom: 3rem; 
 }
 
 
@@ -222,7 +222,7 @@ header {
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
-    padding: 1rem; /* Espaciado interno para los elementos */
+    padding: 1rem; 
 }
 
 .audio-players__item:hover {
@@ -294,8 +294,8 @@ header {
 
 /* Separación general entre secciones */
 .main__section {
-    margin: 4rem 0; /* Mayor separación vertical */
-    padding: 2.5rem; /* Ajuste de padding para mayor espacio interno */
+    margin: 4rem 0; 
+    padding: 2.5rem; 
 }
 
 /* Historia: Rejilla */
@@ -314,14 +314,14 @@ header {
 .main__image {
     max-width: 75%;
     border-radius: 0.5rem;
-    box-shadow: 0.025rem 0.375rem rgba(0, 0, 0, 0.1); /* Sombra para resaltar imágenes */
+    box-shadow: 0.025rem 0.375rem rgba(0, 0, 0, 0.1); 
 }
 
 /* Valores: Lista en columnas */
 .main__values-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; /* Separación más pronunciada entre elementos */
+    gap: 1.5rem; 
     margin: 2rem 0;
     list-style: disc;
     padding-left: 2.5rem;
@@ -335,13 +335,13 @@ header {
 /* Equipo: Rejilla dinámica */
 .main__team-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* Mantén columnas adaptables */
-    gap: 2rem; /* Espacio entre elementos */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Asegura alineación vertical */
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); 
+    gap: 2rem; 
+    justify-content: center; 
+    align-items: center; 
     padding: 0;
     list-style: none;
-    margin: 0 auto; /* Centra el contenedor dentro de la página */
+    margin: 0 auto; 
 }
 
 
@@ -380,7 +380,7 @@ header {
     margin: 0;
     padding: 0;
     position: relative;
-    padding-left: 2.5rem; /* Ajuste del margen izquierdo */
+    padding-left: 2.5rem; 
 }
 
 .main__timeline-list::before {
@@ -433,7 +433,7 @@ header {
     background-color: var(--color-secondary);
     border-radius: 0.5rem;
     text-align: center;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Efecto para destacar la sección */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); 
 }
 
 .main__text {
@@ -441,7 +441,7 @@ header {
     margin-bottom: 2.5rem;
     line-height: 1.8;
     color: var(--color-text);
-    max-width: 50rem; /* Limitar ancho del texto */
+    max-width: 50rem; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -449,7 +449,7 @@ header {
 .main__map {
     width: 100%;
     max-width: 100%;
-    height: 22rem; /* Aumentar la altura del mapa */
+    height: 22rem; 
     border: 0;
     border-radius: 0.5rem;
 }
