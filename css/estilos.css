@@ -449,7 +449,7 @@ header {
 .main__map {
     width: 100%;
     max-width: 100%;
-    height: 22rem; 
+    height: 22rem; /* Aumentar la altura del mapa */
     border: 0;
     border-radius: 0.5rem;
 }

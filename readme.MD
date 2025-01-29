@@ -27,12 +27,17 @@ Cada página utiliza etiquetas semánticas de HTML5 y está diseñada con la met
 ### Descripción de etiquetas usadas
 
 - **`<header>`**: Define la cabecera del sitio, incluyendo el logo y la navegación.
+- **`<body>`**: Define el contenido principal del documento HTML.
 - **`<nav>`**: Contiene los enlaces de navegación.
 - **`<main>`**: Contiene el contenido principal de la página.
 - **`<section>`**: Agrupa partes relacionadas del contenido.
+- **`<p>`**: Define un párrafo de texto.
+- **`<button>`**: Crea un botón interactivo en la página. Puede contener texto o elementos gráficos y se usa para manejar eventos de usuario, como clics.
 - **`<footer>`**: Proporciona información adicional al final de la página.
 - **`<form>`**: Define un formulario para la entrada de datos (atributos `action`, `method`).
+- **`<figure>`**: Representa contenido ilustrado, como una imagen, con su leyenda opcional. Se usa junto con `<figcaption>` para describir la imagen.
 - **`<input>`, `<select>`, `<textarea>`**: Elementos de formulario para obtener información del usuario.
+- **`<textarea>`**: Se usa para crear un área de texto multilínea en un formulario HTML, permitiendo a los usuarios ingresar texto largo.
 - **`<img>`**: Muestra una imagen (atributos `src` y `alt`).
 - **`<a>`**: Crea enlaces (atributos `href` y `target`).
 - **`<article>`**: Define contenido independiente o relacionado.
